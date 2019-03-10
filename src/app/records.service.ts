@@ -10,7 +10,8 @@ export class RecordsService {
   
   getData()
   {
-     return this.http.get<myData>('https://jsonplaceholder.typicode.com/users');
+     return this.http.get<any[]>('https://jsonplaceholder.typicode.com/users');
+    
      
   }
 }
